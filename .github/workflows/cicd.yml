@@ -18,7 +18,7 @@ jobs:
 
       - name: Copy application.yaml
         run: |
-          scp username@yourserver:~/resources/application.yaml .
+          scp ubuntu@192.168.0.200:~/resources/application.yaml .
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
